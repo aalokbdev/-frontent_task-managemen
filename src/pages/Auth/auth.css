@@ -10,7 +10,7 @@
     margin: 0 auto;
   }
   
-  .login-form input, .signup-form input {
+  .login-form input, select, .signup-form input {
     padding: 0.5rem;
     border: 1px solid #ccc;
     border-radius: 4px;

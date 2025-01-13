@@ -53,14 +53,10 @@ const Signup = () => {
           onChange={handleChange}
           required
         />
-         <input
-          type="text"
-          name="role"
-          placeholder="Enter role"
-          value={formData.role}
-          onChange={handleChange}
-          required
-        />
+         <select required name="role" onChange={handleChange}>
+          <option value="User">User</option>
+          <option value="Admin">Admin</option>
+        </select>
         <button type="submit">Signup</button>
         {errorMessage && <p className="error-message">{errorMessage}</p>}
         {successMessage && <p className="success-message">{successMessage}</p>}
